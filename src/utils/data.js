@@ -1,7 +1,7 @@
 export default [
   {
     title: "Basic",
-    description: "All you need to get started!",
+    description: "Everything you need to get started!",
     price: 500,
     features: [
       {
@@ -72,7 +72,7 @@ export default [
   {
     title: "Premium",
     price: 2000,
-    description: "Something more specialized ...",
+    description: "Something even more specialized ...",
     features: [
       {
         name: "Android App File",

@@ -4,6 +4,7 @@ import {
   faTimesCircle,
   faCheckCircle,
 } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-scroll";
 
 const PricingCard = ({ details: { title, description, features, price } }) => {
   return (
@@ -31,11 +32,20 @@ const PricingCard = ({ details: { title, description, features, price } }) => {
             </div>
           ))}
         </div>
-        <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-          <span className="testimonial-item-name text-color-high">
-            {Number.isNaN(parseFloat(price)) ? "" : "$"}
-            {price}
-          </span>
+        <div className="testimonial-item-footer text-s mt-32 mb-0 has-top-divider">
+          {Number.isNaN(parseFloat(price)) ? (
+            <Link
+              to="contact"
+              style={{ textDecoration: "underline", color: "#d4af37" }}
+            >
+              {price}
+            </Link>
+          ) : (
+            <span className="testimonial-item-name text-color-high">
+              {Number.isNaN(parseFloat(price)) ? "" : "$"}
+              {price}
+            </span>
+          )}
           {/* <span className="text-color-low"> / </span>
           <span className="testimonial-item-link">
             <a href="#0">AppName</a>

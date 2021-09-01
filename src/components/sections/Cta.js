@@ -71,7 +71,7 @@ const Cta = ({
 
   return (
     <section {...props} className={outerClasses}>
-      <div className="container">
+      <div id="contact" className="container">
         <div style={{ marginTop: 48 }}>
           <div className="cta-slogan">
             <h3 className="m-0">Any questions? Contact us!</h3>
